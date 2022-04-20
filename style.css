@@ -370,10 +370,10 @@ a{
 }
 .barraNavegacion_lista{
     left:0px;
+    background-color: #5c3434de;
 }
 .barraNavegacion_lista li{
     grid: barraNavegacion;
-    background-color: #5c3434de;
     padding: 10px;
 }
 .barraNavegacion{
