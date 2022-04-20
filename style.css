@@ -10,7 +10,7 @@ header{
     justify-content: space-between;
 }
 footer{
-    background-color: #5C3434;
+    background-image: linear-gradient(#5C3434, #301d1d);
     height: min-content;
     width: 100%;
     display: flex;
@@ -72,6 +72,13 @@ body{
 .barraNavegacion_lista li{
     display: inline-block;
     padding: 24px;
+
+    transition: transform 0.3s, font-weight 0.5s;
+}
+.barraNavegacion_lista li:hover{
+    transform: scale(1.2);
+    font-weight: 500;
+
 }
 .logo{
     height: 120px;
@@ -92,6 +99,13 @@ body{
     padding: 20px;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+.logoRedSocial{
+    transition: transform 0.3s, font-weight 0.5s;
+}
+.logoRedSocial:hover{
+    transform: scale(1.2);
+    font-weight: 500;
 }
 .redesSociales li p{
     color: white;
