@@ -1,21 +1,14 @@
 *{ margin: 0; padding: 0;}
 header{
     background-color: #5C3434;
-    height: 90px;
-    width: 100%;
-    position: sticky;
     top: 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    height: fit-content;
+    color: white;
 }
 footer{
     background-image: linear-gradient(#5C3434, #301d1d);
-    height: min-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    height: 100px;
+    color: white;
 }
 main{
     background-color: #A87171; 
@@ -53,37 +46,14 @@ body{
 
   /* HEADER */
 
-  a{
+a{
     text-decoration: none;
     color: white;
     font-size: 135%;  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 } 
-.barraNavegacion{
-    display: flex;
-    flex-wrap: nowrap;
-    width: fit-content;
-}
-.barraNavegacion_lista{
-    list-style:none;
-    display: flex;
-    flex-wrap: nowrap;
-}
-.barraNavegacion_lista li{
-    display: inline-block;
-    padding: 24px;
-
-    transition: transform 0.3s, font-weight 0.5s;
-}
-.barraNavegacion_lista li:hover{
-    transform: scale(1.2);
-    font-weight: 500;
-
-}
 .logo{
-    height: 120px;
-    width: 120px;
-    padding: 10px 0px 5px 10px;
+    width: 100px;
 }
 
 /* FOOTER */
@@ -116,61 +86,30 @@ body{
 
 /* INDEX */
 
-.contenedor{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "imagen"
-        "review"
-        "pie"
-    ;
-}
-.cabecera{
-    grid-area: cabecera;
-}
-.imagenesInicio{
-    grid-area: imagen;
-}
-.reviews{
-    grid-area: review;
-}
-.pie{
-    grid-area: pie;
-}
 
 /* Fotos Tortas */
-.imagenesInicio li{
-    display: inline-block;
-}
 .fotoTortaInicio{
     height: 20vw;
     width: 24.5vw;
 }
-.listaImagenes{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-
-}
-
 /* Reviews */
 .reviews section{
     background-color: #BF8177;
     width: 155px;
     height: 260px;
     border-radius: 15px;
-    display: flex;
-    flex-wrap: nowrap;
+    /* display: flex;
+    flex-wrap: nowrap; */
 }
-.listaReviews{
+/* .listaReviews{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
     align-items: center;
-}
+} */
 .reviews p{
     background-color: #d69287c9;
-    border-radius: 0px 0px 15px 15px;
+    /* border-radius: 0px 0px 15px 15px;
     width: 135px;
     height: 150px;
     font-size: 16px;
@@ -179,21 +118,21 @@ body{
     padding-left: 8px;
     padding-top: 8px;
     margin-left: 6px;
-    color: white;
+    color: white; */
 }
 .reviews img{
     width: 70px;
     height: 70px;
-    padding-left: 42px;
-    padding-top: 15px;
+    /* padding-left: 42px;
+    padding-top: 15px; */
 }
-.reviews li{
+/* .reviews li{
     list-style:none;
-}
+} */
 
 /* NOSOTROS */
 
-.contenedorNosotros{
+/* .contenedorNosotros{
     display: grid;
     grid-template-areas: 
         "cabecera cabecera"
@@ -202,21 +141,21 @@ body{
         "pie pie"
     ;
     gap: 20px;
-}
-.mainNosotros{
+} */
+/* .mainNosotros{
     grid: mainNosotro;
-}
+} */
 .fotoNosotros{
-    padding: 20px;
-    height: 60vh;
-    width: 50vw;
+    height: 40vh;
+    width: 80vw;
 }
 .asideNosotros{
-    grid: asideNosotros;
+    
+    width: fit-content;
     align-self: center;
     height: fit-content;
     background-color: #BF8177;
-    margin: 10px;
+    
 }
 .textoNosotros{
     text-align: center;
@@ -357,32 +296,32 @@ body{
     
     /* HEADER */
 
-header{
+/* header{
     height: 110px;
     width: 100%; 
-}
-.cabecera{
+} */
+/* .cabecera{
     display: grid;
     grid-template-areas:
         "logo"
         "barraNavegacion"
     ;
-}
-a{
+} */
+/* a{
     font-size: 120%;  
-} 
-.botonInicio{
+}  */
+/* .botonInicio{
     display: none;
-}
-.logo{
+} */
+/* .logo{
     height: 90px;
     width: 90px;
     padding: 0%;
     margin-top: 10px;
     margin-left: 10px;
     grid: logo;
-}
-.barraNavegacion_lista{
+} */
+/* .barraNavegacion_lista{
     left:0px;
     background-color: #5c3434de;
 }
@@ -397,11 +336,11 @@ a{
     margin-top: 0px;
     width: 100vw;
     
-}
+} */
 
     /* INDEX */
 
-.imagenesInicio{
+/* .imagenesInicio{
     height: 290px;
     width: 100%;
 }
@@ -422,27 +361,12 @@ a{
 .fotoTortaInicio{
     height: 350px;       
     width: 100%;
-}
-.reviews{
-    width: 100%;
-    height: 200%;
-    margin-top: 70px;
-    margin-left: 0px;
-    align-items: center;
-}
-.listaReviews{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
-}
+} */
+
 
     /* NOSOTROS */
 
-.contenedorNosotros{
+/* .contenedorNosotros{
     display: grid;
     grid-template-areas: 
         "cabecera"
@@ -451,12 +375,12 @@ a{
         "pie"
     ;
     gap: 20px;
-}
-.fotoNosotros{
+} */
+/* .fotoNosotros{
     padding: 20px;
     height: 50vh;
     width: 100vw;
-}
+} */
 
     /* PRODUCTOS */
 
