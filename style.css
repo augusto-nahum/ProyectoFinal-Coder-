@@ -45,7 +45,7 @@ body{
   }
 
   /* HEADER */
-
+.navbar-toggler{background-color: #A87171;}
 a{
     text-decoration: none;
     color: white;
@@ -246,7 +246,7 @@ a{
 
 /* CONTACTO */
 
-.contenedorContacto{
+/* .contenedorContacto{
     display: grid;
     grid-template-areas: 
         "cabecera cabecera"
@@ -255,13 +255,13 @@ a{
         "pie pie"
     ;
     gap: 20px;
-}
-.mainClases{
+} */
+/* .mainClases{
     grid: mainClases;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 .formulario{
     background-color:#BF8177;
     padding: 25px;
@@ -280,14 +280,14 @@ a{
     padding-bottom: 20px;
     padding-top: 30px;
 }
-.mapa{
-    grid: mapa;
-    width: fit-content;
-}
+/* .mapa{
+     grid: mapa; 
+     width: 100%;
+}  */
 .mapa iframe{
-    padding: 20px;
+    /* padding: 20px; */
     height: 60vh;
-    width: 50vw;
+    width: 53vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -412,7 +412,7 @@ a{
 
     /* CONTACTO */
 
-.contenedorContacto{
+/* .contenedorContacto{
     display: grid;
     grid-template-areas: 
         "cabecera"
@@ -430,5 +430,5 @@ a{
     margin: 25px;
     padding: 25px;
     width: 100vw;
-}
+} */
 }
