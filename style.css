@@ -146,16 +146,14 @@ a{
     grid: mainNosotro;
 } */
 .fotoNosotros{
-    height: 40vh;
-    width: 80vw;
+    height: 50vh;
+    width: 70vw;
 }
 .asideNosotros{
-    
     width: fit-content;
     align-self: center;
     height: fit-content;
     background-color: #BF8177;
-    
 }
 .textoNosotros{
     text-align: center;
@@ -210,7 +208,7 @@ a{
 
 /* CLASES */
 
-.contenedorClases{
+/* .contenedorClases{
     display: grid;
     grid-template-areas: 
         "cabecera cabecera"
@@ -219,22 +217,22 @@ a{
         "pie pie"
     ;
     gap: 20px;
-}
-.mainClases{
+} */
+/* .mainClases{
     grid: mainClases;
-}
+} */
 .asideClases{
-    grid: asideClases;
-    align-self: center;
+    /* grid: asideClases;
+    align-self: center; */
     height: fit-content;
     background-color: #BF8177;
-    padding: 20px;
-    margin: 10px;
+    /* adding: 20px;
+    margin: 10px; */
 }
 .fotoClases{
-    padding: 20px;
-    height: 60vh;
-    width: 50vw;
+    /* padding: 20px; */
+    height: 50vh;
+    width: 70vw;
 }
 .textoClases{
     color: white;
@@ -394,7 +392,7 @@ a{
 
     /* CLASES */
 
-.contenedorClases{
+/* .contenedorClases{
     display: grid;
     grid-template-areas: 
         "cabecera"
@@ -410,7 +408,7 @@ a{
     padding: 20px;
     height: 60vh;
     width: 100vw;
-}
+} */
 
     /* CONTACTO */
 
