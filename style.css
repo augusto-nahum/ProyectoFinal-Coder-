@@ -55,6 +55,14 @@ a{
 .logo{
     width: 100px;
 }
+.nav-link{
+    transition: transform 0.3s, font-weight 0.5s;
+}
+.nav-link:hover{
+    transform: scale(1.2);
+    color: white;
+    font-weight: 500;
+}
 
 /* FOOTER */
 
@@ -75,6 +83,7 @@ a{
 }
 .logoRedSocial:hover{
     transform: scale(1.2);
+    color: white;
     font-weight: 500;
 }
 .redesSociales li p{
@@ -89,7 +98,7 @@ a{
 
 /* Fotos Tortas */
 .fotoTortaInicio{
-    height: 20vw;
+    height: 25vw;
     width: 24.5vw;
 }
 /* Reviews */
@@ -109,8 +118,8 @@ a{
 } */
 .reviews p{
     background-color: #d69287c9;
-    /* border-radius: 0px 0px 15px 15px;
-    width: 135px;
+    border-radius: 0px 0px 15px 15px;
+    /* width: 135px;
     height: 150px;
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -166,7 +175,7 @@ a{
 }
 
 /* PRODUCTOS */
-.contenedorProductos{
+/* .contenedorProductos{
     display: grid;
     grid-template-areas: 
         "cabecera"
@@ -174,34 +183,38 @@ a{
         "pie"
     ;
     gap: 20px;
-}
-.productos{
+} */
+/* .productos{
     display: flex;
     justify-content: center;
     align-items: center;
-    list-style: none;
-    grid: productos;
-}
+    
+    
+} */
 .productos img{
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     border-radius: 25px;
 }
 .productos li{
-    padding: 30px 80px 30px 80px;
+    
+    /* padding: 30px 80px 30px 80px; */
+    width: fit-content;
 }
 .productos li p{
-   text-align: center;
-   width: 200px;
-   color: white;
-   background-color: #A87171;
-   border-radius: 25px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 200px;
+    color: white;
+    background-color: #A87171;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .productosLista{
-    display: grid;
+    list-style: none;
+    width: fit-content;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); */
     border-radius: 30px;
     background-color: #BF8177;
 }
@@ -382,13 +395,13 @@ a{
 
     /* PRODUCTOS */
 
-.productosLista{
+/* .productosLista{
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(1, 1fr) ;
     border-radius: 30px;
     background-color: #BF8177;
-}
+} */
 
     /* CLASES */
 
