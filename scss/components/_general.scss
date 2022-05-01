@@ -1,1 +1,30 @@
 *{padding: 0; margin: 0;}
+header{
+    background-color: $colorPrincipal;
+    display: flex;
+    position: sticky;
+    top: 0px;
+}
+body{background-color: $colorFondo;}
+footer{background-color: $colorPrincipal;}
+/*  Scrollbar CSS  */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #A87171 #5c3434;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #5c3434;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #A87171;
+    border-radius: 10px;
+    border: 3px solid #5c3434;
+  }
