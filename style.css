@@ -56,12 +56,13 @@ a{
     width: 100px;
 }
 .nav-link{
-    transition: transform 0.3s, font-weight 0.5s;
+    transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s;
 }
 .nav-link:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     color: white;
-    font-weight: 500;
+   
+    text-decoration: underline;
 }
 
 /* FOOTER */
