@@ -1,21 +1,14 @@
 *{ margin: 0; padding: 0;}
 header{
     background-color: #5C3434;
-    height: 90px;
-    width: 100%;
-    position: sticky;
     top: 0px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
+    height: fit-content;
+    color: white;
 }
 footer{
     background-image: linear-gradient(#5C3434, #301d1d);
-    height: min-content;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
+    height: 100px;
+    color: white;
 }
 main{
     background-color: #A87171; 
@@ -52,38 +45,24 @@ body{
   }
 
   /* HEADER */
-
-  a{
+.navbar-toggler{background-color: #A87171;}
+a{
     text-decoration: none;
     color: white;
     font-size: 135%;  
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 } 
-.barraNavegacion{
-    display: flex;
-    flex-wrap: nowrap;
-    width: fit-content;
-}
-.barraNavegacion_lista{
-    list-style:none;
-    display: flex;
-    flex-wrap: nowrap;
-}
-.barraNavegacion_lista li{
-    display: inline-block;
-    padding: 24px;
-
-    transition: transform 0.3s, font-weight 0.5s;
-}
-.barraNavegacion_lista li:hover{
-    transform: scale(1.2);
-    font-weight: 500;
-
-}
 .logo{
-    height: 120px;
-    width: 120px;
-    padding: 10px 0px 5px 10px;
+    width: 100px;
+}
+.nav-link{
+    transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s;
+}
+.nav-link:hover{
+    transform: scale(1.05);
+    color: white;
+   
+    text-decoration: underline;
 }
 
 /* FOOTER */
@@ -92,7 +71,6 @@ body{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
-    
 }
  .redesSociales li{
     display: inline-block;
@@ -105,6 +83,7 @@ body{
 }
 .logoRedSocial:hover{
     transform: scale(1.2);
+    color: white;
     font-weight: 500;
 }
 .redesSociales li p{
@@ -116,107 +95,56 @@ body{
 
 /* INDEX */
 
-.contenedor{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "imagen"
-        "review"
-        "pie"
-    ;
-}
-.cabecera{
-    grid-area: cabecera;
-}
-.imagenesInicio{
-    grid-area: imagen;
-}
-.reviews{
-    grid-area: review;
-}
-.pie{
-    grid-area: pie;
-}
 
 /* Fotos Tortas */
-.imagenesInicio li{
-    display: inline-block;
-}
 .fotoTortaInicio{
-    height: 20vw;
+    height: 25vw;
     width: 24.5vw;
 }
-.listaImagenes{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-
+@media only screen and (max-width: 576px) {
+    .foto4{
+        display: none;
+    }
+    .foto2{
+        display: none;
+    }
+    .foto3{
+        display: none;
+    }
+    .fotoTortaInicio{
+        height: 350px;       
+        width: 100vw;
+    }
+    
 }
-
 /* Reviews */
 .reviews section{
     background-color: #BF8177;
     width: 155px;
     height: 260px;
     border-radius: 15px;
-    display: flex;
-    flex-wrap: nowrap;
-}
-.listaReviews{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    align-items: center;
 }
 .reviews p{
     background-color: #d69287c9;
     border-radius: 0px 0px 15px 15px;
-    width: 135px;
-    height: 150px;
-    font-size: 16px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    padding-left: 8px;
-    padding-top: 8px;
-    margin-left: 6px;
-    color: white;
 }
 .reviews img{
     width: 70px;
     height: 70px;
-    padding-left: 42px;
-    padding-top: 15px;
-}
-.reviews li{
-    list-style:none;
+    margin-left: 30px;
 }
 
 /* NOSOTROS */
 
-.contenedorNosotros{
-    display: grid;
-    grid-template-areas: 
-        "cabecera cabecera"
-        "mainNosotro asideNosotros"
-        "mainNosotro asideNosotros"
-        "pie pie"
-    ;
-    gap: 20px;
-}
-.mainNosotros{
-    grid: mainNosotro;
-}
 .fotoNosotros{
-    padding: 20px;
-    height: 60vh;
-    width: 50vw;
+    height: 50vh;
+    width: 80vw;
 }
 .asideNosotros{
-    grid: asideNosotros;
+    width: fit-content;
     align-self: center;
     height: fit-content;
     background-color: #BF8177;
-    margin: 10px;
 }
 .textoNosotros{
     text-align: center;
@@ -229,73 +157,40 @@ body{
 }
 
 /* PRODUCTOS */
-.contenedorProductos{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "productos"
-        "pie"
-    ;
-    gap: 20px;
-}
-.productos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    grid: productos;
-}
+
 .productos img{
-    height: 200px;
-    width: 200px;
+    height: 160px;
+    width: 160px;
     border-radius: 25px;
+    margin-left: 20px;
 }
 .productos li{
-    padding: 30px 80px 30px 80px;
+    width: fit-content;
 }
 .productos li p{
-   text-align: center;
-   width: 200px;
-   color: white;
-   background-color: #A87171;
-   border-radius: 25px;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    width: 200px;
+    color: white;
+    background-color: #A87171;
+    border-radius: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .productosLista{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    grid-template-rows: repeat(3, 1fr);
+    list-style: none;
+    width: fit-content;
     border-radius: 30px;
     background-color: #BF8177;
 }
 
 /* CLASES */
 
-.contenedorClases{
-    display: grid;
-    grid-template-areas: 
-        "cabecera cabecera"
-        "mainClases asideClases"
-        "mainClases asideClases"
-        "pie pie"
-    ;
-    gap: 20px;
-}
-.mainClases{
-    grid: mainClases;
-}
 .asideClases{
-    grid: asideClases;
-    align-self: center;
     height: fit-content;
     background-color: #BF8177;
-    padding: 20px;
-    margin: 10px;
 }
 .fotoClases{
-    padding: 20px;
-    height: 60vh;
-    width: 50vw;
+    height: 50vh;
+    width: 80vw;
 }
 .textoClases{
     color: white;
@@ -309,22 +204,6 @@ body{
 
 /* CONTACTO */
 
-.contenedorContacto{
-    display: grid;
-    grid-template-areas: 
-        "cabecera cabecera"
-        "mainClases mapa"
-        "mainClases mapa"
-        "pie pie"
-    ;
-    gap: 20px;
-}
-.mainClases{
-    grid: mainClases;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .formulario{
     background-color:#BF8177;
     padding: 25px;
@@ -343,170 +222,10 @@ body{
     padding-bottom: 20px;
     padding-top: 30px;
 }
-.mapa{
-    grid: mapa;
-    width: fit-content;
-}
+
 .mapa iframe{
-    padding: 20px;
-    height: 60vh;
-    width: 50vw;
-}
-
-@media screen and (max-width: 768px) {
-    
-    /* HEADER */
-
-header{
-    height: 110px;
-    width: 100%; 
-}
-.cabecera{
-    display: grid;
-    grid-template-areas:
-        "logo"
-        "barraNavegacion"
-    ;
-}
-a{
-    font-size: 120%;  
-} 
-.botonInicio{
-    display: none;
-}
-.logo{
-    height: 90px;
-    width: 90px;
-    padding: 0%;
-    margin-top: 10px;
-    margin-left: 10px;
-    grid: logo;
-}
-.barraNavegacion_lista{
-    left:0px;
-    background-color: #5c3434de;
-}
-.barraNavegacion_lista li{
-    grid: barraNavegacion;
-    padding: 10px;
-}
-.barraNavegacion{
-    display: flex;
-    justify-content: center;
-    left: 0px;
-    margin-top: 0px;
-    width: 100vw;
-    
-}
-
-    /* INDEX */
-
-.imagenesInicio{
-    height: 290px;
-    width: 100%;
-}
-.listaImagenes{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-}
-.foto4{
-    display: none;
-}
-.foto2{
-    display: none;
-}
-.foto3{
-    display: none;
-}
-.fotoTortaInicio{
-    height: 350px;       
-    width: 100%;
-}
-.reviews{
-    width: 100%;
-    height: 200%;
-    margin-top: 70px;
-    margin-left: 0px;
-    align-items: center;
-}
-.listaReviews{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
-    gap: 20px;
-}
-
-    /* NOSOTROS */
-
-.contenedorNosotros{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "mainNosotro"
-        "asideNosotros"
-        "pie"
-    ;
-    gap: 20px;
-}
-.fotoNosotros{
-    padding: 20px;
     height: 50vh;
-    width: 100vw;
+    width: 80vw;
 }
 
-    /* PRODUCTOS */
 
-.productosLista{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr) ;
-    border-radius: 30px;
-    background-color: #BF8177;
-}
-
-    /* CLASES */
-
-.contenedorClases{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "mainClases"
-        "asideClases"
-        "pie"
-    ;
-    gap: 20px;
-
-}
-.fotoClases{
-    grid: fotoClases;
-    padding: 20px;
-    height: 60vh;
-    width: 100vw;
-}
-
-    /* CONTACTO */
-
-.contenedorContacto{
-    display: grid;
-    grid-template-areas: 
-        "cabecera"
-        "mainClases"
-        "mapa"
-        "pie"
-    ;
-    gap: 20px;
-}
-.mapa iframe{
-    width: 100vw;
-}
-.formulario{
-    background-color:#BF8177;
-    margin: 25px;
-    padding: 25px;
-    width: 100vw;
-}
-}

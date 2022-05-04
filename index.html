@@ -5,55 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./imagenes/logo.png">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/f5986943af.js" crossorigin="anonymous"></script>
+
     <title>IMAN</title>
 </head>
 <body class="contenedorIndex">
-    <header class="cabecera">
-        <div><a href="#"><img  src="./imagenes/logo.png" alt="logo" class="logo"></a></div>
-        <nav class="barraNavegacion">
-            <ul class="barraNavegacion_lista">
-                <li><a href="#" class="botonInicio">Inicio</a></li>
-                <li><a href="./paginas/nosotros.html">Nosotros</a></li>
-                <li><a href="./paginas/productos.html">Productos</a></li>
-                <li><a href="./paginas/clases.html">Clases</a></li>
-                <li><a href="./paginas/contacto.html">Contactos</a></li>
-            </ul>
-        </nav>
-        
+    <header class="header position-sticky">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-around ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                  <img src="./imagenes/logo.png" alt="logo" class="logo  w-30">
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-md-2">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./paginas/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./paginas/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./paginas/clases.html">Clases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="./paginas/contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
     </header>
     <main>
-        <div class="imagenesInicio">
-            <ul class="listaImagenes">
-                <li><img src="./imagenes/fotos_index/tortainicio.png" alt="foto de producto, torta mousse de chocolate" class="fotoTortaInicio foto1"></li>
-                <li><img src="./imagenes/fotos_index/imagesinicio2.jpg" alt="foto de producto, torta de chocolate bombon" class="fotoTortaInicio foto2"></li>
-                <li><img src="./imagenes/fotos_index/torta.png" alt="foto de producto, torta de chocolate" class="fotoTortaInicio foto3"></li>
-                <li><img src="./imagenes/fotos_index/imageninicio2.jpg" alt="foto de producto, torta de crema y frutillas" class="fotoTortaInicio foto4"></li>
-            </ul>
+        <div class=" container-fluid">
+            <div class="row ">
+                <div class="col-3 p-0 foto1"><img src="./imagenes/fotos_index/tortainicio.png" alt="foto de producto, torta mousse de chocolate" class="fotoTortaInicio "></div>
+                <div class="col-3 p-0 foto2"><img src="./imagenes/fotos_index/imagesinicio2.jpg" alt="foto de producto, torta de chocolate bombon" class="fotoTortaInicio "></div>
+                <div class="col-3 p-0 foto3"><img src="./imagenes/fotos_index/torta.png" alt="foto de producto, torta de chocolate" class="fotoTortaInicio "></div>
+                <div class="col-3 p-0 foto4"><img src="./imagenes/fotos_index/imageninicio2.jpg" alt="foto de producto, torta de crema y frutillas" class="fotoTortaInicio "></div>
+            </div>
         </div>
-        <div class="reviews">
-            <ul class="listaReviews">
-            <section><li><img src="./imagenes/fotos_index/persona-1.png" alt="foto persona"> <p>Muy buenos productos! Buen precio y excelente calidad, recomendadisima!</p>
-            </li></section>
-            <section><li><img src="./imagenes/fotos_index/person-2.png" alt="foto persona"> <p>Preparan la mejor torta de chocolate que probe en toda mi vida, muy recomendada.</p>
-            </li></section>
-            <section><li><img src="./imagenes/fotos_index/persona-3.png" alt="foto persona"> <p>Muy buen servicio y precios. Excelente la calidad de las tortas, muy ricas. Recomendado!</p>
-            </li></section>
-            <section><li><img src="./imagenes/fotos_index/persona-4.png" alt="foto persona"> <p>Hacen tortas muy ricas!! Es definitivamente mi pasteleria de confianza. </p>
-            </li></section>
-            </ul>
+        <div class="reviews container-fluid">
+
+            <div class="row d-flex justify-content-evenly text-light p-2">
+                <section class="col-3 my-sm-2"><img class="" src="./imagenes/fotos_index/persona-1.png" alt="foto persona"> <p class="p-1 text-center">Muy buenos productos! Buen precio y excelente calidad, recomendadisima!</p></section>
+                <section class="col-3 my-sm-2"><img class="" src="./imagenes/fotos_index/person-2.png" alt="foto persona"> <p class=" p-1 text-center">Preparan la mejor torta de chocolate que probe en toda mi vida, muy recomendada.</p></section>
+                <section class="col-3 my-sm-2"><img class="" src="./imagenes/fotos_index/persona-3.png" alt="foto persona"> <p class="p-1 text-center">Muy buen servicio y precios. Excelente la calidad de las tortas, muy ricas. Recomendado!</p></section>
+                <section class="col-3 my-sm-2"><img class="" src="./imagenes/fotos_index/persona-4.png" alt="foto persona"> <p class="p-1 text-center">Hacen tortas muy ricas!! Es definitivamente mi pasteleria de confianza. </p></section>
+            </div>
         </div>
 
     </main>
-    <footer class="pie">
-        <div class="divRedesSociales">
-            <ul class="redesSociales">
-                <li><p>Seguinos!</p></li>
-                <li class="logoRedSocial"><a href="https://www.facebook.com" target="_blanck"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-                <li class="logoRedSocial"><a href="https://www.instagram.com" target="_blanck"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
-            </ul>
+
+    <footer class=" row align-items-center container-fluid mx-0">
+        <div class="row align-items-center">
+            <div class="row">
+                <div class="cols-lg-6 col-md-6 col-sm-12 d-flex justify-content-center">
+                    <h4>Seguinos!</h4>
+                </div>
+                <div class="cols-lg-6 col-md-6 col-sm-12 d-flex justify-content-evenly">
+                    <a class="logoRedSocial" href="https://www.facebook.com" target="_blanck"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+                    <a class="logoRedSocial" href="https://www.instagram.com" target="_blanck"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
