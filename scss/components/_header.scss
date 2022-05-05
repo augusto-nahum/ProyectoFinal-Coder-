@@ -1,0 +1,19 @@
+.navbar-toggler{background-color:$colorFondo;}
+a{
+    text-decoration: none;
+    color: $colorLetras;
+    font-size: 135%;  
+    font-family: $fontSubT;
+} 
+.logo{
+    width: 100px;
+}
+.nav-link{
+    transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s;
+    
+    &:hover{
+        transform: scale(1.05);
+        color: $colorLetras;
+        text-decoration: underline;
+    }
+}

@@ -1,17 +1,31 @@
 *{padding: 0; margin: 0;}
 header{
-    background-color: $colorPrincipal;
-    display: flex;
-    position: sticky;
-    top: 0px;
+  background-color: $colorPrincipal;
+  top: 0px;
+  height: fit-content;
+  color: $colorLetras;
 }
-body{background-color: $colorFondo;}
-footer{background-color: $colorPrincipal;}
+body{
+  background-color: $colorFondo;
+  width: 100%;
+  height: 100%;
+}
+main{
+  background-color: $colorFondo; 
+  list-style:none;
+  height: 100%;
+  width: 100%;
+}
+footer{ 
+  background-image: linear-gradient($colorPrincipal, #301d1d);
+  height: 100px;
+  color: $colorLetras;}
+
 /*  Scrollbar CSS  */
   /* Firefox */
   * {
     scrollbar-width: auto;
-    scrollbar-color: #A87171 #5c3434;
+    scrollbar-color: $colorFondo $colorPrincipal;
   }
 
   /* Chrome, Edge, and Safari */
@@ -20,11 +34,11 @@ footer{background-color: $colorPrincipal;}
   }
 
   *::-webkit-scrollbar-track {
-    background: #5c3434;
+    background: $colorPrincipal;
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color: #A87171;
+    background-color: $colorFondo;
     border-radius: 10px;
-    border: 3px solid #5c3434;
+    border: 3px solid $colorPrincipal4;
   }
