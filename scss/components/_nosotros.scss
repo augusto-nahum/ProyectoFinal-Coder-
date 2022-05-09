@@ -1,12 +1,11 @@
+@import"../base/variables";
 .fotoNosotros{
-    height: 50vh;
-    width: 80vw;
+    @extend .tamFotos;
 }
 .asideNosotros{
-    width: fit-content;
+    @include width-hight(fit-content,fit-content);
     align-self: center;
-    height: fit-content;
-    background-color: $colorComplementario;
+    background-color: map-get($color , complementario );
     p{
         text-align: center;
         margin: 20px;
@@ -15,6 +14,5 @@
         color: $colorLetras;
         font-weight: 400;
         font-family: $fontParrafo;
-
     }
 }

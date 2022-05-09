@@ -1,3 +1,7 @@
+.tamFotos, .fotoNosotros {
+  height: 50vh;
+  width: 80vw; }
+
 * {
   padding: 0;
   margin: 0; }
@@ -16,8 +20,8 @@ body {
 main {
   background-color: #A87171;
   list-style: none;
-  height: 100%;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 footer {
   background-image: linear-gradient(#5C3434, #301d1d);
@@ -83,14 +87,14 @@ a {
     color: white;
     font-weight: 500; }
 
-.fotoNosotros {
+.tamFotos, .fotoNosotros {
   height: 50vh;
   width: 80vw; }
 
 .asideNosotros {
   width: fit-content;
-  align-self: center;
   height: fit-content;
+  align-self: center;
   background-color: #BF8177; }
   .asideNosotros p {
     text-align: center;
