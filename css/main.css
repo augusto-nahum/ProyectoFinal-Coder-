@@ -1,6 +1,3 @@
-.tamFotos, .fotoNosotros {
-  height: 50vh;
-  width: 80vw; }
 
 * {
   padding: 0;
@@ -87,7 +84,7 @@ a {
     color: white;
     font-weight: 500; }
 
-.tamFotos, .fotoNosotros {
+.fotoNosotros {
   height: 50vh;
   width: 80vw; }
 

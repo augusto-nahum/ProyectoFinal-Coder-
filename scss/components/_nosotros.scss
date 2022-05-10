@@ -1,6 +1,6 @@
 @import"../base/variables";
 .fotoNosotros{
-    @extend .tamFotos;
+    @extend %tamFotos;
 }
 .asideNosotros{
     @include width-hight(fit-content,fit-content);
