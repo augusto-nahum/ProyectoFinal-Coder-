@@ -1,0 +1,20 @@
+.formulario{
+    background-color:map-get($color , complementario);
+    padding: 25px;
+    margin: 10px;
+    @include texto($fontParrafo);
+    div{
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    h3{
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 30px;
+    }
+}
+.mapa iframe{
+    @extend %tamFotos;
+}
