@@ -11,8 +11,7 @@
         margin: 20px;
         padding: 20px;
         font-size: medium;
-        color: $colorLetras;
+        @include texto($fontParrafo);
         font-weight: 400;
-        font-family: $fontParrafo;
     }
 }

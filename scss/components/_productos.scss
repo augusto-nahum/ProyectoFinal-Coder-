@@ -9,10 +9,9 @@
         p{
             text-align: center;
             width: 200px;
-            color: white;
+            @include texto($fontParrafo);
             background-color:map-get($color , fondo);
             border-radius: 25px;
-            font-family: $fontParrafo;
         }
     }
 }

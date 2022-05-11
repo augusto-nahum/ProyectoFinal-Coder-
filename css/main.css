@@ -1,4 +1,4 @@
-.fotoNosotros {
+.fotoNosotros, .fotoClases {
   height: 50vh;
   width: 80vw; }
 
@@ -119,7 +119,7 @@ a {
   height: 70px;
   margin-left: 30px; }
 
-.fotoNosotros {
+.fotoNosotros, .fotoClases {
   height: 50vh;
   width: 80vw; }
 
@@ -134,8 +134,8 @@ a {
     padding: 20px;
     font-size: medium;
     color: white;
-    font-weight: 400;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 400; }
 
 .productos img {
   width: 160px;
@@ -149,12 +149,24 @@ a {
     text-align: center;
     width: 200px;
     color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     background-color: #A87171;
-    border-radius: 25px;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+    border-radius: 25px; }
 
 .productosLista {
   list-style: none;
   width: fit-content;
   border-radius: 30px;
   background-color: #BF8177; }
+
+.asideClases {
+  height: fit-content;
+  background-color: #BF8177; }
+
+.textoClases {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  padding: 15px; }
+  .textoClases h3 {
+    font-size: 20px; }
