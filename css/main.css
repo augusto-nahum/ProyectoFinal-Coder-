@@ -1,3 +1,6 @@
+.fotoNosotros {
+  height: 50vh;
+  width: 80vw; }
 
 * {
   padding: 0;
@@ -83,6 +86,38 @@ a {
     transform: scale(1.2);
     color: white;
     font-weight: 500; }
+
+/* Fotos Tortas */
+.fotoTortaInicio {
+  width: 24.5vw;
+  height: 25vw; }
+
+@media only screen and (max-width: 576px) {
+  .foto4 {
+    display: none; }
+  .foto2 {
+    display: none; }
+  .foto3 {
+    display: none; }
+  .fotoTortaInicio {
+    width: 100vw;
+    height: 350px; } }
+
+/* Reviews */
+.reviews section {
+  background-color: #BF8177;
+  width: 155px;
+  height: 260px;
+  border-radius: 15px; }
+
+.reviews p {
+  background-color: #d69287c9;
+  border-radius: 0px 0px 15px 15px; }
+
+.reviews img {
+  width: 70px;
+  height: 70px;
+  margin-left: 30px; }
 
 .fotoNosotros {
   height: 50vh;
