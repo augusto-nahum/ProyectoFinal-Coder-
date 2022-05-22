@@ -6,8 +6,12 @@
     div{
         padding: 10px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: nowrap;
+    }
+    .enviar{
+        display: flex;
+        justify-content: center;
     }
     h3{
         text-align: center;

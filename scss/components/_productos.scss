@@ -2,6 +2,7 @@
     img{
         @include width-hight(160px,160px);
         border-radius: 25px;
+        margin: 5px;
         margin-left: 20px;
     }
     li{
@@ -11,7 +12,8 @@
             width: 200px;
             @include texto($fontParrafo);
             background-color:map-get($color , fondo);
-            border-radius: 25px;
+            border-radius: 20px;
+            padding: 5px;
         }
     }
 }

@@ -1,4 +1,6 @@
-.navbar-toggler{background-color:map-get($color , fondo);}
+.navbar-toggler{
+    background-color:map-get($color , fondo);
+}
 a{
     text-decoration: none;
     color: $colorLetras;

@@ -21,7 +21,9 @@ main {
   background-color: #A87171;
   list-style: none;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 footer {
   background-image: linear-gradient(#5C3434, #301d1d);
@@ -87,6 +89,13 @@ a {
     color: white;
     font-weight: 500; }
 
+.fotoNosotros, .fotoClases, .mapa iframe {
+  height: 50vh;
+  width: 80vw; }
+
+.mainIndex {
+  margin-top: 0; }
+
 /* Fotos Tortas */
 .fotoTortaInicio {
   width: 24.5vw;
@@ -101,7 +110,8 @@ a {
     display: none; }
   .fotoTortaInicio {
     width: 100vw;
-    height: 350px; } }
+    height: 50vh;
+    margin-left: 2px; } }
 
 /* Reviews */
 .reviews section {
@@ -141,6 +151,7 @@ a {
   width: 160px;
   height: 160px;
   border-radius: 25px;
+  margin: 5px;
   margin-left: 20px; }
 
 .productos li {
@@ -151,7 +162,8 @@ a {
     color: white;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     background-color: #A87171;
-    border-radius: 25px; }
+    border-radius: 20px;
+    padding: 5px; }
 
 .productosLista {
   list-style: none;
@@ -180,8 +192,11 @@ a {
   .formulario div {
     padding: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: nowrap; }
+  .formulario .enviar {
+    display: flex;
+    justify-content: center; }
   .formulario h3 {
     text-align: center;
     padding-bottom: 20px;

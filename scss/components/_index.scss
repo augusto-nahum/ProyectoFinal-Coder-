@@ -1,8 +1,11 @@
+@import"../base/variables";
+.mainIndex{margin-top: 0}
 /* Fotos Tortas */
 .fotoTortaInicio{
     @include width-hight(24.5vw,25vw);
 }
 @media only screen and (max-width: 576px) {
+    
     .foto4{
         display: none;
     }
@@ -13,7 +16,8 @@
         display: none;
     }
     .fotoTortaInicio{
-        @include width-hight(100vw,350px);
+        @include width-hight(100vw,50vh);
+        margin-left: 2px;
     }
     
 }
