@@ -8,7 +8,7 @@ a{
     font-family: $fontSubT;
 } 
 .logo{
-    width: 100px;
+    @include width-hight(100px,100px);
 }
 .nav-link{
     transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s;
