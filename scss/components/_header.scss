@@ -1,0 +1,21 @@
+.navbar-toggler{
+    background-color:map-get($color , fondo);
+}
+a{
+    text-decoration: none;
+    color: $colorLetras;
+    font-size: 135%;  
+    font-family: $fontSubT;
+} 
+.logo{
+    @include width-hight(100px,100px);
+}
+.nav-link{
+    transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s;
+    
+    &:hover{
+        transform: scale(1.05);
+        color: $colorLetras;
+        text-decoration: underline;
+    }
+}

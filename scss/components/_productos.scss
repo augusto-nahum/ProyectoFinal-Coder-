@@ -1,0 +1,25 @@
+.productos{
+    img{
+        @include width-hight(160px,160px);
+        border-radius: 25px;
+        margin: 5px;
+        margin-left: 20px;
+    }
+    li{
+        width: fit-content;
+        p{
+            text-align: center;
+            width: 200px;
+            @include texto($fontParrafo);
+            background-color:map-get($color , fondo);
+            border-radius: 20px;
+            padding: 5px;
+        }
+    }
+}
+.productosLista{
+    list-style: none;
+    width: fit-content;
+    border-radius: 30px;
+    background-color:map-get($color , complementario);
+}

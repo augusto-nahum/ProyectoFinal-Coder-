@@ -1,0 +1,45 @@
+*{padding: 0; margin: 0;}
+header{
+  background-color: map-get($color , principal);
+  top: 0px;
+  height: fit-content;
+  color: $colorLetras;
+}
+body{
+  background-color: map-get($color , fondo);
+  @include width-hight(100%,100%);
+  
+}
+main{
+  background-color: map-get($color , fondo); 
+  list-style:none;
+  @include width-hight(100%,100%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer{ 
+  background-image: linear-gradient(map-get($color , principal), #301d1d);
+  height: 100px;
+  color: $colorLetras;}
+
+/*  Scrollbar CSS  */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: map-get($color , fondo) map-get($color , principal);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: map-get($color , principal);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: map-get($color , fondo);
+    border-radius: 10px;
+    border: 3px solid map-get($color , principal);
+  }

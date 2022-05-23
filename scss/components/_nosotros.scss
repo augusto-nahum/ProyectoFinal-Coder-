@@ -1,0 +1,17 @@
+@import"../base/variables";
+.fotoNosotros{
+    @extend %tamFotos;
+}
+.asideNosotros{
+    @include width-hight(fit-content,fit-content);
+    align-self: center;
+    background-color: map-get($color , complementario );
+    p{
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        font-size: medium;
+        @include texto($fontParrafo);
+        font-weight: 400;
+    }
+}

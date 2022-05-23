@@ -1,0 +1,203 @@
+.fotoNosotros, .fotoClases, .mapa iframe {
+  height: 50vh;
+  width: 80vw; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background-color: #5C3434;
+  top: 0px;
+  height: fit-content;
+  color: white; }
+
+body {
+  background-color: #A87171;
+  width: 100%;
+  height: 100%; }
+
+main {
+  background-color: #A87171;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+footer {
+  background-image: linear-gradient(#5C3434, #301d1d);
+  height: 100px;
+  color: white; }
+
+/*  Scrollbar CSS  */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #A87171 #5C3434; }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 16px; }
+
+*::-webkit-scrollbar-track {
+  background: #5C3434; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #A87171;
+  border-radius: 10px;
+  border: 3px solid #5C3434; }
+
+.navbar-toggler {
+  background-color: #A87171; }
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 135%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif; }
+
+.logo {
+  width: 100px; }
+
+.nav-link {
+  transition: transform 0.3s, font-weight 0.3s, text-decoration 0.3s; }
+  .nav-link:hover {
+    transform: scale(1.05);
+    color: white;
+    text-decoration: underline; }
+
+.redesSociales {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly; }
+  .redesSociales li {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px; }
+    .redesSociales li p {
+      color: white;
+      font-size: 35px;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      text-align: center; }
+
+.logoRedSocial {
+  transition: transform 0.3s, font-weight 0.5s; }
+  .logoRedSocial:hover {
+    transform: scale(1.2);
+    color: white;
+    font-weight: 500; }
+
+.fotoNosotros, .fotoClases, .mapa iframe {
+  height: 50vh;
+  width: 80vw; }
+
+.mainIndex {
+  margin-top: 0; }
+
+/* Fotos Tortas */
+.fotoTortaInicio {
+  width: 24.5vw;
+  height: 25vw; }
+
+@media only screen and (max-width: 576px) {
+  .foto4 {
+    display: none; }
+  .foto2 {
+    display: none; }
+  .foto3 {
+    display: none; }
+  .fotoTortaInicio {
+    width: 100vw;
+    height: 50vh;
+    margin-left: 2px; } }
+
+/* Reviews */
+.reviews section {
+  background-color: #BF8177;
+  width: 155px;
+  height: 260px;
+  border-radius: 15px; }
+
+.reviews p {
+  background-color: #d69287c9;
+  border-radius: 0px 0px 15px 15px; }
+
+.reviews img {
+  width: 70px;
+  height: 70px;
+  margin-left: 30px; }
+
+.fotoNosotros, .fotoClases, .mapa iframe {
+  height: 50vh;
+  width: 80vw; }
+
+.asideNosotros {
+  width: fit-content;
+  height: fit-content;
+  align-self: center;
+  background-color: #BF8177; }
+  .asideNosotros p {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    font-size: medium;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 400; }
+
+.productos img {
+  width: 160px;
+  height: 160px;
+  border-radius: 25px;
+  margin: 5px;
+  margin-left: 20px; }
+
+.productos li {
+  width: fit-content; }
+  .productos li p {
+    text-align: center;
+    width: 200px;
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    background-color: #A87171;
+    border-radius: 20px;
+    padding: 5px; }
+
+.productosLista {
+  list-style: none;
+  width: fit-content;
+  border-radius: 30px;
+  background-color: #BF8177; }
+
+.asideClases {
+  height: fit-content;
+  background-color: #BF8177; }
+
+.textoClases {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  padding: 15px; }
+  .textoClases h3 {
+    font-size: 20px; }
+
+.formulario {
+  background-color: #BF8177;
+  padding: 25px;
+  margin: 10px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; }
+  .formulario div {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; }
+  .formulario .enviar {
+    display: flex;
+    justify-content: center; }
+  .formulario h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 30px; }

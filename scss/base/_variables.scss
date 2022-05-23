@@ -1,0 +1,25 @@
+$color:(
+    fondo:#A87171,
+    principal:#5C3434,
+    complementario:#BF8177,
+);
+
+$colorLetras:white;
+
+$fontParrafo: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+$fontSubT: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+
+
+%tamFotos{
+    height: 50vh;
+    width: 80vw;
+};
+
+@mixin width-hight ($width,$hight){
+    width: $width;
+    height: $hight;
+};
+@mixin texto ($font) {
+    color:$colorLetras;
+    font-family:$font;
+}
